@@ -2,7 +2,7 @@ const answerDisplay = document.getElementById("answer");
 const questionInput = document.getElementById("userQuestion");
 const getResponseBtn = document.getElementById("obtainAnswerBtn");
 
-const API_URL = "http://192.168.1.51:5000/get-random-answer";
+const API_URL = "https://decisions-api-v1.onrender.com/get-random-answer";
 
 function getAnswer() {
   getResponseBtn.disabled = true;
@@ -32,6 +32,7 @@ function getAnswer() {
       getResponseBtn.disabled = false;
     })
 
+  questionInput.value = "";
   getResponseBtn.innerText = "Get Answered";
 }
 

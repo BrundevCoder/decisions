@@ -27,6 +27,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 1.25rem;
   width: 100%;
   max-width: var(--max-width-container);
@@ -118,4 +119,11 @@ input::placeholder {
   background: rgba(37, 37, 141, 0.637);
   border: 2px solid rgba(4, 4, 117, 0.637);
   box-shadow: 3px 5px 0 rgb(24, 24, 78);
+}
+
+.warn {
+  text-align: justify;
+  margin-top: 1.75rem;
+  font-family: var(--font);
+  font-size: 0.9rem;
 }
