@@ -13,7 +13,7 @@ possible_answers = [
   "Of course!",
   "Let's just say I can't answer that yet...",
   "Yes",
-  "No"
+  "No",
 ]
 
 @app.route("/get-random-answer", methods=["GET"])
