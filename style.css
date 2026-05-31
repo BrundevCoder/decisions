@@ -91,7 +91,30 @@ input::placeholder {
 }
 
 .btn {
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 1.05rem;
   margin-top: 1.65rem;
   padding: 1.5rem 2.7rem;
   border-radius: 12px;
+  background: rgba(67, 67, 255, 0.637);
+  border: 2px solid rgba(9, 9, 252, 0.637);
+  box-shadow: 3px 5px 0 rgb(71, 71, 235);
+  transition: 115ms ease;
+}
+
+.btn:hover {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 2px 4px 0 rgb(71, 71, 235);
+}
+
+.btn:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: 1px 2px 0 rgb(71, 71, 235);
+}
+
+.btn:disabled {
+  background: rgba(37, 37, 141, 0.637);
+  border: 2px solid rgba(4, 4, 117, 0.637);
+  box-shadow: 3px 5px 0 rgb(24, 24, 78);
 }
