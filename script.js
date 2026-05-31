@@ -32,7 +32,6 @@ function getAnswer() {
       getResponseBtn.disabled = false;
     })
 
-  questionInput.value = "";
   getResponseBtn.innerText = "Get Answered";
 }
 
