@@ -2,7 +2,7 @@ const answerDisplay = document.getElementById("answer");
 const questionInput = document.getElementById("userQuestion");
 const getResponseBtn = document.getElementById("obtainAnswerBtn");
 
-const API_URL = "";
+const API_URL = "http://192.168.1.51:5000/get-random-answer";
 
 function getAnswer() {
   getResponseBtn.disabled = true;
@@ -36,3 +36,11 @@ function getAnswer() {
 }
 
 getResponseBtn.addEventListener("click", getAnswer);
+questionInput.addEventListener("input", () => {
+  if (questionInput.value.length === 0) {
+    getResponseBtn.disabled = true;
+  }
+  else {
+    getResponseBtn.disabled = false;
+  }
+})

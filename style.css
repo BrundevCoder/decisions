@@ -114,6 +114,7 @@ input::placeholder {
 }
 
 .btn:disabled {
+  cursor: not-allowed;
   background: rgba(37, 37, 141, 0.637);
   border: 2px solid rgba(4, 4, 117, 0.637);
   box-shadow: 3px 5px 0 rgb(24, 24, 78);
